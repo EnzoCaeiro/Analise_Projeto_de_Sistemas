@@ -1,4 +1,4 @@
-# ProjetoAPS - Aplicativo Bancário 
+# ProjetoAPS - Sistema de gestão financeira 
 
 ## 🎯 WHAT (O Quê?)
 
