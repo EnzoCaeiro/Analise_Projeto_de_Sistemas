@@ -1,136 +1,115 @@
 # ProjetoAPS - Sistema de gestão financeira 
 
-## 🎯 WHAT (O Quê?)
+## Descrição
 
-**ProjetoAPS** é um projeto acadêmico desenvolvido como parte da disciplina de **Análise e Projeto de Sistemas** na UDF (Universidade do Distrito Federal). O projeto foca em aplicar técnicas e métodos de engenharia de software com orientação a objetos para análise, projeto e desenvolvimento de um sistema de informação completo.
+ProjetoAPS é um sistema de gestão financeira desenvolvido para gerenciar as finanças pessoais e empresariais de forma simples, segura e organizada. O objetivo é permitir controle de receitas, despesas, orçamentos e relatórios, ajudando usuários a tomar decisões financeiras baseadas em dados.
 
-### Objetivos Principais:
-- Aplicar metodologias de análise de requisitos
-- Realizar modelagem orientada a objetos
-- Gerar artefatos profissionais de sistemas (diagramas UML, documentação, etc.)
-- Implementar um sistema funcional baseado em boas práticas de engenharia de software
+## Funcionalidades Principais
 
----
+- Cadastro e autenticação de usuários
+- Gerenciamento de contas (bancos, carteiras, cartões)
+- Registro de transações: receitas e despesas com categorias e tags
+- Lançamento e acompanhamento de parcelas
+- Planejamento orçamentário por categoria e período
+- Relatórios e gráficos (fluxo de caixa, despesas por categoria, balanço)
+- Importação/Exportação de dados (CSV)
+- Backup e restauração
+- Perfis de usuário com permissões (usuário, administrador)
 
-## 👥 WHO (Quem?)
+## Tecnologias (sugestão)
 
-**Autor:** Enzo Caeiro  
-**Instituição:** UDF - Universidade do Distrito Federal  
-**Disciplina:** Análise e Projeto de Sistemas  
-**Público-Alvo:** 
-- Estudantes de Engenharia de Software
-- Profissionais interessados em análise e projeto de sistemas
-- Educadores em metodologias de desenvolvimento orientado a objetos
+- Backend: Java (Spring Boot) / Node.js (Express) / Python (Django) — escolha conforme o curso
+- Banco de Dados: PostgreSQL / MySQL / SQLite (para desenvolvimento)
+- Frontend: React / Vue / Angular / Aplicação Desktop com Electron
+- Autenticação: JWT / OAuth2
+- Ferramentas: Git, Docker (opcional)
 
----
-
-## 🤔 WHY (Por Quê?)
-
-Este projeto foi desenvolvido com o propósito de:
-
-1. **Aprendizado Prático** - Consolidar conhecimentos teóricos em análise e projeto de sistemas através de prática real
-2. **Portfólio Acadêmico** - Demonstrar competência em engenharia de software e modelagem orientada a objetos
-3. **Boas Práticas** - Aplicar padrões, convenções e metodologias reconhecidas na indústria de desenvolvimento de software
-4. **Experiência Completa** - Vivenciar todas as fases do ciclo de vida de desenvolvimento de um sistema
-
----
-
-## ⏰ WHEN (Quando?)
-
-- **Período Acadêmico:** Segundo semestre de 2024
-- **Disciplina:** Análise e Projeto de Sistemas (APS)
-- **Status:** Em desenvolvimento / Completado conforme cronograma acadêmico
-
----
-
-## 📍 WHERE (Onde?)
-
-- **Repositório:** https://github.com/EnzoCaeiro/Analise-e-Projeto-de-Sistemas_s
-- **Localização do Projeto:** `/ProjetoAPS/`
-- **Ambiente:** Plataforma: Web/Desktop (conforme especificado no projeto)
-- **Instituição:** UDF - Universidade do Distrito Federal
-
----
-
-## 📋 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 ProjetoAPS/
 ├── README.md                 # Este arquivo
-├── docs/                     # Documentação do projeto
-│   ├── analise_requisitos/   # Análise de requisitos
-│   ├── diagramas_uml/        # Diagramas UML
-│   └── especificacoes/       # Especificações funcionais
+├── docs/                     # Documentação do projeto (requisitos, casos de uso)
 ├── src/                      # Código-fonte
-│   └── [arquivos do sistema]
+│   ├── backend/              # Código do servidor
+│   └── frontend/             # Código da interface do usuário
+├── migrations/               # Scripts de migração do BD
 ├── testes/                   # Testes unitários e de integração
-└── artefatos/                # Artefatos de projeto
-
+└── scripts/                  # Scripts úteis (seed, import, export)
 ```
 
----
+## Requisitos
 
-## 🚀 Como Começar
+- Java 11+ ou Node 14+/Python 3.8+ (dependendo da stack escolhida)
+- PostgreSQL ou outro SGBD compatível
+- Git
+- Node.js e npm/yarn (se houver frontend em JS)
 
-### Pré-requisitos
-- [Especificar ferramentas necessárias]
-- [Ex: Java 11+, UML Tool, Git, etc.]
+## Como executar (exemplo genérico)
 
-### Instalação
+1. Clone o repositório
+
 ```bash
-git clone https://github.com/EnzoCaeiro/Analise-e-Projeto-de-Sistemas_s.git
-cd Analise-e-Projeto-de-Sistemas_s/ProjetoAPS
+git clone https://github.com/EnzoCaeiro/Analise_Projeto_de_Sistemas.git
+cd Analise_Projeto_de_Sistemas/ProjetoAPS
 ```
 
-### Execução
-[Instruções específicas para executar o projeto]
+2. Configurar variáveis de ambiente (ex.: DATABASE_URL, JWT_SECRET)
 
----
+3. Executar o backend
 
-## 📚 Tecnologias e Ferramentas Utilizadas
+- Exemplo com Spring Boot:
 
-- **Linguagem:** [Especificar]
-- **Modelagem:** UML (Diagramas de Caso de Uso, Classes, Sequência, etc.)
-- **Metodologia:** [Scrum/Ágil/Waterfall - conforme aplicável]
-- **Ferramentas:** [Git, IDE específica, ferramentas UML, etc.]
+```bash
+./mvnw spring-boot:run
+```
 
----
+- Exemplo com Node.js:
 
-## 📖 Documentação
+```bash
+npm install
+npm start
+```
 
-A documentação completa do projeto está organizada em:
-- **Análise de Requisitos:** Documentação de casos de uso e requisitos funcionais
-- **Diagramas UML:** Modelagem visual do sistema
-- **Especificações:** Detalhes técnicos e funcionais
+4. Executar o frontend (se houver)
 
----
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## ✅ Funcionalidades Principais
+## API (exemplo resumido)
 
-- [Listar as principais funcionalidades do sistema]
-- [Exemplo: Gerenciamento de usuários]
-- [Exemplo: Autenticação e segurança]
+- POST /api/auth/login — autenticar usuário
+- POST /api/users — cadastrar usuário (admin)
+- GET /api/accounts — listar contas
+- POST /api/transactions — criar transação
+- GET /api/reports/cashflow — relatório de fluxo de caixa
 
----
+(Detalhar rotas e contratos na documentação técnica em docs/)
 
-## 🤝 Contribuições
+## Modelagem e Artefatos
 
-Este é um projeto acadêmico. Sugestões e feedback são bem-vindos!
+- Diagramas UML: casos de uso, classes, sequência e componentes
+- Requisitos funcionais e não funcionais em docs/analise_requisitos/
+- Planos de teste em testes/
 
----
+## Contribuições
 
-## 📄 Licença
+Contribuições são bem-vindas. Para contribuir:
 
-Este projeto foi desenvolvido como atividade acadêmica na UDF.
+1. Fork do projeto
+2. Criar branch com a feature: feature/nome-da-feature
+3. Abrir Pull Request descrevendo as alterações
 
----
+## Licença
 
-## 📞 Contato
+Projeto acadêmico — verificar com a instituição a política de licenciamento. Se desejar, adicione uma licença (ex: MIT) neste repositório.
 
-**Desenvolvedor:** Enzo Caeiro  
-**GitHub:** [@EnzoCaeiro](https://github.com/EnzoCaeiro)
+## Contato
 
----
+**Autor:** Enzo Caeiro
 
-**Última atualização:** Agosto de 2026
 
+**Última atualização:** Setembro de 2026
