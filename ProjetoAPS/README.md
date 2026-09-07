@@ -36,17 +36,6 @@ Muitas pessoas lidam com suas finanças de forma baseada em "achismos" ou usam a
 
 ## 👥 WHO (QUEM)
 
-### Stakeholders
-
-| Persona | Descrição | Necessidades |
-|---------|-----------|--------------|
-| **Usuário Final** | Pessoa física que deseja gerenciar suas finanças | Interface intuitiva, segurança, relatórios claros |
-| **Administrador** | Gerenciador do sistema | Controle total de usuários, auditoria, backups |
-| **Desenvolvedor** | Engenheiro de software | Código bem documentado, arquitetura limpa, APIs claras |
-| **Instituição Educacional** | Escola/Universidade | Projeto completo, documentação técnica, demonstração de competências |
-
-### Contribuidores
-
 | Nome         |    Git     
 |--------------|-------------
 |Enzo Francisco|[EnzoCaeiro](https://github.com/EnzoCaeiro)
@@ -97,9 +86,8 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📝 Licença
 
-Projeto acadêmico — Verificar com a instituição a política de licenciamento.
+Projeto acadêmico
 
-Sugestão: Licença [MIT](LICENSE) ou [Apache 2.0](LICENSE) neste repositório.
 
 
 **Última atualização:** Setembro de 2026  
