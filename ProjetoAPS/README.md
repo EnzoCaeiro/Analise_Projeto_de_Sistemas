@@ -2,34 +2,35 @@
 
 ## 📋 Visão Geral
 
-ProjetoAPS é um sistema de gestão financeira desenvolvido para gerenciar finanças pessoais e empresariais de forma simples, segura e organizada. O objetivo é permitir controle centralizado de receitas, despesas, contas e planejamento orçamentário com relatórios e análises detalhadas.
+É um sistema de gestão financeira desenvolvido para gerenciar finanças pessoais de forma simples, segura e organizada. O objetivo é permitir controle centralizado de receitas, despesas, contas e planejamento orçamentário com relatórios e análises detalhadas.
 
 ---
 
 ## ❓ WHAT (O QUÊ)
 
-### Escopo do Projeto
+**O que será desenvolvido?**
+Um Sistema de Gestão Financeira Pessoal (Web ou Mobile), projetado para ajudar indivíduos e famílias a organizarem sua vida financeira cotidiana. O sistema substitui o uso de planilhas complexas e anotações informais em cadernos por uma ferramenta prática, intuitiva e acessível na palma da mão.
 
-O ProjetoAPS é uma aplicação web/desktop que oferece:
+**De forma global, o sistema entregará:**
 
-- **Gestão de Contas**: Controle de múltiplas contas bancárias, carteiras e cartões de crédito
-- **Registro de Transações**: Categorização automática de receitas e despesas com suporte a tags
-- **Parcelamento**: Lançamento e acompanhamento de transações parceladas
-- **Orçamento**: Planejamento e monitoramento de limites por categoria e período
-- **Relatórios**: Dashboards com fluxo de caixa, análises por categoria e balanço patrimonial
-- **Importação/Exportação**: Suporte a arquivos CSV para backup e migração de dados
-- **Controle de Acesso**: Perfis de usuário com permissões diferenciadas
+* **Controle de Receitas e Despesas:** Um ambiente centralizado onde o usuário pode registrar seus ganhos (salário, trabalhos extras) e seus gastos diários (moradia, alimentação, assinaturas, lazer), categorizando cada transação para entender exatamente para onde o dinheiro está indo.
+* **Gestão de Orçamento Mensal:** A possibilidade de criar "tetos de gastos" para diferentes áreas da vida. O sistema avisará o usuário caso ele esteja prestes a estourar o limite definido para "Delivery" ou "Lazer" no mês, por exemplo.
+* **Acompanhamento de Metas Financeiras:** Uma área dedicada ao planejamento futuro, permitindo que o usuário cadastre objetivos (como criar uma reserva de emergência, fazer uma viagem ou comprar um carro) e acompanhe o progresso do dinheiro poupado.
+* **Análise de Hábitos de Consumo:** A geração de gráficos visuais simples e fáceis de entender, que resumem a saúde financeira do usuário. O objetivo é promover a educação financeira, ajudando a pessoa a identificar e cortar gastos fantasmas ou desnecessários.
 
 ---
 
 ## 🎯 WHY (POR QUE)
 
-### Motivação e Justificativa
+**Por que estamos desenvolvendo este sistema e qual problema ele resolve?**
+Muitas pessoas lidam com suas finanças de forma baseada em "achismos" ou usam anotações fragmentadas e planilhas de difícil manutenção. Isso frequentemente leva ao endividamento, ao estresse e à frustração de nunca conseguir poupar. O desenvolvimento deste sistema justifica-se pela necessidade de simplificar e democratizar a gestão financeira pessoal.
 
-- **Necessidade de Mercado**: Crescente demanda por ferramentas de controle financeiro pessoal e empresarial
-- **Educacional**: Projeto acadêmico para aplicar conceitos de engenharia de software, arquitetura e boas práticas
-- **Valor Agregado**: Automatização da gestão financeira, redução de erros manuais e maior visibilidade financeira
-- **Escalabilidade**: Base sólida para evolução futura com novas funcionalidades (IA, integração bancária, etc.)
+**Os principais motivos que justificam a criação do sistema incluem:**
+
+* **Combater a desorganização e o endividamento:** Ajudar o usuário a mapear seus "gastos invisíveis" (pequenas despesas diárias que somem com o salário) e evitar que ele caia no cheque especial ou no rotativo do cartão de crédito por falta de planejamento.
+* **Reduzir a ansiedade financeira:** O desconhecimento sobre a própria situação financeira gera estresse. O sistema trará paz mental ao oferecer previsibilidade, permitindo que o usuário saiba exatamente quanto pode gastar sem comprometer o mês.
+* **Tornar o controle acessível e prático:** Ferramentas complexas desmotivam as pessoas. A ideia é substituir processos manuais e chatos por uma interface tecnológica intuitiva, que faz os cálculos pesados automaticamente.
+* **Viabilizar a realização de sonhos:** Pessoas sem controle financeiro têm muita dificuldade de construir um patrimônio. O sistema incentiva a poupança ativa, transformando metas abstratas (como "viajar nas férias") em objetivos concretos com acompanhamento de progresso.
 
 ---
 
@@ -46,285 +47,33 @@ O ProjetoAPS é uma aplicação web/desktop que oferece:
 
 ### Contribuidores
 
-| Nome | Papel | Contato |
-|------|-------|---------|
-| Enzo Caeiro | Desenvolvedor Principal | [Seu contato] |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
+| Nome         |    Git     
+|--------------|-------------
+|Enzo Francisco|[EnzoCaeiro](https://github.com/EnzoCaeiro)
+|Arthur Santos |[ArthurNoleto](https://github.com/arthurnoleto521-hue)        
+|Victor Alves  |[VictorAlves](https://github.com/vituadm)         
+|Maria Eduarda |[EduardaMoreira](https://github.com/moreirafernandesm92-wq)         
+|Felipe Falcão |[FelipeFalcão](https://github.com/2lxpe)         
 
 ---
 
 ## 🤔 HOW (COMO)
 
-### Arquitetura e Tecnologias
-
-#### Backend
-- **Runtime**: Java 11+ (Spring Boot) / Node.js 14+ (Express) / Python 3.8+ (Django)
-- **Banco de Dados**: PostgreSQL (produção) / SQLite (desenvolvimento)
-- **Autenticação**: JWT / OAuth2
-- **Validação**: Hibernate Validator / Joi / Marshmallow
-
-#### Frontend
-- **Framework**: React / Vue / Angular
-- **Styling**: Tailwind CSS / Bootstrap
-- **Estado**: Redux / Vuex / Context API
-- **Ferramentas**: Webpack / Vite
-
-#### DevOps
-- **Versionamento**: Git & GitHub
-- **Containerização**: Docker & Docker Compose
-- **CI/CD**: GitHub Actions / GitLab CI
-- **Deploy**: Heroku / DigitalOcean / AWS
-
-### Fluxo de Desenvolvimento
-
-```
-1. Autenticação → Login JWT
-2. Dashboard → Visão geral financeira
-3. Contas → CRUD de contas e carteiras
-4. Transações → Registro e categorização
-5. Relatórios → Análises e gráficos
-6. Configurações → Perfis e permissões
-```
+* **Arquitetura de Desenvolvimento:** O projeto seguirá o padrão em camadas (ou arquitetura cliente-servidor), separando a interface com o qual o usuário interage da lógica de processamento e do armazenamento seguro das informações.
+* **Front-end (Interface Visual):** Tecnologias voltadas para a criação de uma interface limpa, responsiva e amigável (como HTML5, CSS3 e JavaScript, ou frameworks modernos como React ou Vue.js, focando na experiência de uso mobile-first).
+* **Back-end (Lógica de Negócio):** Linguagem de programação responsável por processar as requisições do usuário, calcular os saldos, aplicar as regras de orçamento e autenticar os acessos (como Python com Flask/Django ou Node.js).
+* **Banco de Dados:** Sistema de gerenciamento para armazenar de forma estruturada e segura os cadastros de usuários, transações, categorias e metas (utilizando bancos relacionais como PostgreSQL ou MySQL).
+* **Metodologia de Projeto:** Utilização de práticas ágeis para o levantamento de requisitos, modelagem orientada a objetos com diagramas UML e controle de versão via Git/GitHub.
 
 ---
 
 ## ⏰ WHEN (QUANDO)
 
-### Cronograma do Projeto
-
-| Fase | Período | Entregas |
-|------|---------|----------|
-| **Análise & Requisitos** | Semana 1-2 | Documentação de requisitos, UML, casos de uso |
-| **Design da Arquitetura** | Semana 3-4 | Diagramas de componentes, design patterns, ERD |
-| **Desenvolvimento Backend** | Semana 5-8 | APIs REST, autenticação, lógica de negócio |
-| **Desenvolvimento Frontend** | Semana 5-9 | Interface, integração com APIs |
-| **Testes & QA** | Semana 10-11 | Testes unitários, integração, aceitação |
-| **Deploy & Documentação** | Semana 12-13 | Produção, manuais de usuário, finalizações |
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-ProjetoAPS/
-├── README.md                      # Este arquivo
-├── .gitignore                     # Exclusões Git
-├── docker-compose.yml             # Orquestração de containers
-│
-├── docs/                          # 📚 Documentação
-│   ├── analise_requisitos/        # Requisitos funcionais e não-funcionais
-│   ├── diagramas/                 # UML, arquitetura, ERD
-│   ├── api/                       # Documentação de APIs (Swagger/OpenAPI)
-│   └── guias/                     # Guias de configuração e deployment
-│
-├── src/                           # 💻 Código-fonte
-│   ├── backend/                   # Servidor/API
-│   │   ├── config/                # Configurações
-│   │   ├── controllers/           # Controladores
-│   │   ├── services/              # Lógica de negócio
-│   │   ├── repositories/          # Acesso a dados
-│   │   ├── models/                # Entidades
-│   │   ├── middlewares/           # Middlewares (autenticação, etc)
-│   │   └── main.java/.js/.py      # Arquivo principal
-│   │
-│   └── frontend/                  # Interface do usuário
-│       ├── components/            # Componentes reutilizáveis
-│       ├── pages/                 # Páginas principais
-│       ├── services/              # Chamadas à API
-│       ├── styles/                # CSS/SCSS
-│       ├── utils/                 # Funções auxiliares
-│       └── App.jsx/.vue/.tsx      # Componente raiz
-│
-├── migrations/                    # 🗄️ Scripts BD
-│   ├── init.sql                   # Schema inicial
-│   └── seed.sql                   # Dados de exemplo
-│
-├── testes/                        # ✅ Testes
-│   ├── unit/                      # Testes unitários
-│   ├── integration/               # Testes de integração
-│   ├── e2e/                       # Testes end-to-end
-│   └── postman/                   # Coleções Postman
-│
-└── scripts/                       # 🛠️ Scripts utilitários
-    ├── setup.sh                   # Setup inicial
-    ├── seed-db.sh                 # Popular BD
-    ├── backup.sh                  # Backup automático
-    └── deploy.sh                  # Deploy
-```
-
----
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-
-- Git
-- Docker & Docker Compose (recomendado)
-- OU:
-  - Java 11+ / Node.js 14+ / Python 3.8+
-  - PostgreSQL 12+
-  - npm/yarn (frontend)
-
-### Opção 1: Com Docker (Recomendado)
-
-```bash
-# Clone o repositório
-git clone https://github.com/EnzoCaeiro/Analise_Projeto_de_Sistemas.git
-cd Analise_Projeto_de_Sistemas/ProjetoAPS
-
-# Copie o arquivo de variáveis de ambiente
-cp .env.example .env
-
-# Inicie os containers
-docker-compose up --build
-
-# Acesse a aplicação
-# Frontend: http://localhost:3000
-# Backend: http://localhost:8080
-# Banco: localhost:5432
-```
-
-### Opção 2: Instalação Manual (Java + Spring Boot)
-
-```bash
-# Clone e acesse
-git clone https://github.com/EnzoCaeiro/Analise_Projeto_de_Sistemas.git
-cd Analise_Projeto_de_Sistemas/ProjetoAPS
-
-# Configure variáveis de ambiente
-export DATABASE_URL=jdbc:postgresql://localhost:5432/projetoaps
-export JWT_SECRET=sua_chave_secreta_aqui
-export SPRING_PROFILE_ACTIVE=dev
-
-# Backend
-./mvnw clean install
-./mvnw spring-boot:run
-
-# Frontend (em outro terminal)
-cd src/frontend
-npm install
-npm run dev
-```
-
-### Opção 3: Instalação Manual (Node.js + Express)
-
-```bash
-# Backend
-cd src/backend
-npm install
-npm start
-
-# Frontend (em outro terminal)
-cd src/frontend
-npm install
-npm run dev
-```
-
----
-
-## 📡 API REST (Resumo)
-
-### Autenticação
-- `POST /api/auth/login` — Login de usuário
-- `POST /api/auth/register` — Registro de novo usuário
-- `POST /api/auth/refresh` — Renovar token JWT
-
-### Usuários
-- `GET /api/users` — Listar usuários (admin)
-- `POST /api/users` — Criar usuário
-- `GET /api/users/:id` — Detalhes do usuário
-- `PUT /api/users/:id` — Atualizar usuário
-- `DELETE /api/users/:id` — Deletar usuário
-
-### Contas
-- `GET /api/accounts` — Listar contas
-- `POST /api/accounts` — Criar conta
-- `PUT /api/accounts/:id` — Atualizar conta
-- `DELETE /api/accounts/:id` — Deletar conta
-
-### Transações
-- `GET /api/transactions` — Listar transações
-- `POST /api/transactions` — Criar transação
-- `PUT /api/transactions/:id` — Atualizar transação
-- `DELETE /api/transactions/:id` — Deletar transação
-
-### Relatórios
-- `GET /api/reports/cashflow` — Fluxo de caixa
-- `GET /api/reports/by-category` — Despesas por categoria
-- `GET /api/reports/balance` — Balanço
-- `GET /api/reports/forecast` — Previsão financeira
-
-**Documentação completa**: Ver `docs/api/` (Swagger/OpenAPI)
-
----
-
-## 🧪 Testes
-
-```bash
-# Testes unitários (Backend)
-./mvnw test
-
-# Testes unitários (Frontend)
-npm run test
-
-# Cobertura de testes
-./mvnw test jacoco:report
-npm run test:coverage
-
-# Testes E2E (Cypress/Selenium)
-npm run test:e2e
-```
-
----
-
-## 📊 Modelagem
-
-### Diagrama Entidade-Relacionamento (ERD)
-```
-USUÁRIOS ──┐
-           ├─→ CONTAS ──┐
-PERMISSÕES┘             ├─→ TRANSAÇÕES
-                        │
-                   CATEGORIAS
-                        │
-                    ORÇAMENTOS
-```
-
-### Casos de Uso Principais
-- Autenticar-se no sistema
-- Gerenciar contas
-- Registrar transações
-- Visualizar relatórios
-- Exportar dados em CSV
-
-*Diagramas detalhados em `docs/diagramas/`*
-
----
-
-## 🔒 Segurança
-
-- ✅ Autenticação com JWT/OAuth2
-- ✅ Validação de entrada (OWASP Top 10)
-- ✅ Criptografia de senhas (bcrypt)
-- ✅ HTTPS obrigatório em produção
-- ✅ CORS configurado
-- ✅ Rate limiting nas APIs
-- ✅ Auditoria de operações críticas
-
----
-
-## 📚 Documentação
-
-- **`docs/analise_requisitos/`** — Especificação funcional
-- **`docs/diagramas/`** — UML e arquitetura
-- **`docs/api/`** — Documentação de APIs
-- **`docs/guias/`** — Setup, deployment e troubleshooting
-- **`src/backend/README.md`** — Específico do backend
-- **`src/frontend/README.md`** — Específico do frontend
-
+* **Arquitetura de Desenvolvimento:** O projeto seguirá o padrão em camadas (ou arquitetura cliente-servidor), separando a interface com o qual o usuário interage da lógica de processamento e do armazenamento seguro das informações.
+* **Front-end (Interface Visual):** Tecnologias voltadas para a criação de uma interface limpa, responsiva e amigável (como HTML5, CSS3 e JavaScript, ou frameworks modernos como React ou Vue.js, focando na experiência de uso mobile-first).
+* **Back-end (Lógica de Negócio):** Linguagem de programação responsável por processar as requisições do usuário, calcular os saldos, aplicar as regras de orçamento e autenticar os acessos (como Python com Flask/Django ou Node.js).
+* **Banco de Dados:** Sistema de gerenciamento para armazenar de forma estruturada e segura os cadastros de usuários, transações, categorias e metas (utilizando bancos relacionais como PostgreSQL ou MySQL).
+* **Metodologia de Projeto:** Utilização de práticas ágeis para o levantamento de requisitos, modelagem orientada a objetos com diagramas UML e controle de versão via Git/GitHub.
 ---
 
 ## 🤝 Contribuições
@@ -352,37 +101,6 @@ Projeto acadêmico — Verificar com a instituição a política de licenciament
 
 Sugestão: Licença [MIT](LICENSE) ou [Apache 2.0](LICENSE) neste repositório.
 
----
-
-## 📞 Contato & Suporte
-
-| Canal | Informação |
-|-------|-----------|
-| **Autor** | Enzo Caeiro |
-| **Email** | [Seu email] |
-| **GitHub** | [@EnzoCaeiro](https://github.com/EnzoCaeiro) |
-| **Issues** | [Reportar bug ou sugerir feature](../../issues) |
-
----
-
-## 📈 Roadmap
-
-- [ ] MVP com funcionalidades core
-- [ ] Integração com bancos reais
-- [ ] Mobile app (React Native/Flutter)
-- [ ] Inteligência Artificial para recomendações
-- [ ] Integração com blockchain para notarização
-- [ ] Suporte multi-moeda
-
----
-
-## 🙏 Agradecimentos
-
-- Universidade/Instituição
-- Orientadores e mentores
-- Comunidade open-source
-
----
 
 **Última atualização:** Setembro de 2026  
 **Status do Projeto:** Em desenvolvimento 🔄
