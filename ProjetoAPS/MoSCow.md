@@ -28,11 +28,10 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 # 2. Identificação do Projeto
 
-**Nome do projeto:**  
-> Preencher aqui.
+**Sistema de Gestão Financeira**
 
 **Descrição resumida do projeto:**  
-> Apresente, em um pequeno parágrafo, o contexto do projeto e sua finalidade.
+> É um sistema de gestão financeira desenvolvido para gerenciar finanças pessoais de forma simples, segura e organizada. O objetivo é permitir controle centralizado de receitas, despesas, contas e planejamento orçamentário com relatórios e análises detalhadas.
 
 ---
 
