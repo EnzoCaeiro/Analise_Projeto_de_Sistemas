@@ -22,7 +22,6 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 | 3 |Maria Eduarda Moreira |
 | 4 |Arthur Santos |
 | 5 | Felipe Falcão|
-| 6 | |
 
 ---
 
