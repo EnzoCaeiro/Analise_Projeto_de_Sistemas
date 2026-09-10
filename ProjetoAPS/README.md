@@ -46,7 +46,7 @@ Muitas pessoas lidam com suas finanças de forma baseada em "achismos" ou usam a
 
 ---
 
-## 🤔 HOW (COMO)
+## 🤔 HOW (COMO) 
 
 * **Arquitetura de Desenvolvimento:** O projeto seguirá o padrão em camadas (ou arquitetura cliente-servidor), separando a interface com o qual o usuário interage da lógica de processamento e do armazenamento seguro das informações.
 * **Front-end (Interface Visual):** Tecnologias voltadas para a criação de uma interface limpa, responsiva e amigável (como HTML5, CSS3 e JavaScript, ou frameworks modernos como React ou Vue.js, focando na experiência de uso mobile-first).
