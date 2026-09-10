@@ -30,6 +30,7 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 **Sistema de Gestão Financeira**
 
 **Descrição resumida do projeto:**  
+
 > É um sistema de gestão financeira desenvolvido para gerenciar finanças pessoais de forma simples, segura e organizada. O objetivo é permitir controle centralizado de receitas, despesas, contas e planejamento orçamentário com relatórios e análises detalhadas.
 
 ---
@@ -43,7 +44,7 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 **Resposta:**
 
-> Preencher aqui.
+> A desorganização nas finanças pessoais causada pelo uso de métodos ineficientes (como anotações mentais, cadernos físicos ou planilhas complexas). Essa falta de visibilidade leva ao desconhecimento sobre os "gastos invisíveis", dificultando a poupança e frequentemente resultando em endividamento e estresse.
 
 ---
 
@@ -53,7 +54,7 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 **Resposta:**
 
-> Preencher aqui.
+> Indivíduos e famílias de diversas faixas de renda que necessitam organizar sua vida financeira cotidiana, mas não possuem conhecimentos avançados em finanças ou planilhas.
 
 ---
 
@@ -63,7 +64,7 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 **Resposta:**
 
-> Preencher aqui.
+> As pessoas tentam controlar seus gastos utilizando cadernos de anotações informais, planilhas do Excel (que quebram facilmente ou são difíceis de atualizar pelo celular), aplicativos complexos que exigem muito tempo, ou simplesmente não fazem controle algum e confiam apenas no saldo final do banco.
 
 ---
 
@@ -71,9 +72,9 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 Liste pelo menos três dificuldades observadas.
 
-1. 
-2. 
-3. 
+1. Esquecimento de anotar despesas pequenas do dia a dia pela falta de uma ferramenta prática sempre à mão.
+2. Dificuldade em visualizar rapidamente para onde o dinheiro está indo (falta de gráficos ou resumos).
+3. Incapacidade de saber se um gasto extra vai estourar o orçamento do mês antes de realizá-lo.
 
 ---
 
@@ -87,7 +88,7 @@ Utilize como referência:
 
 **Objetivo:**
 
-> Preencher aqui.
+> Nosso projeto pretende entregar um sistema prático e mobile-first de gestão financeira para indivíduos e famílias, contribuindo para a redução do endividamento e da ansiedade através do controle centralizado de receitas, categorização de despesas e planejamento orçamentário.
 
 ---
 
