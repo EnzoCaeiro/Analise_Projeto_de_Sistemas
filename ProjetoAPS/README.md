@@ -1,6 +1,6 @@
 # ProjetoAPS - Sistema de Gestão Financeira     
 
-## 📋 Visão Geral
+## 📋 Visão Geral  
 
 É um sistema de gestão financeira desenvolvido para gerenciar finanças pessoais de forma simples, segura e organizada. O objetivo é permitir controle centralizado de receitas, despesas, contas e planejamento orçamentário com relatórios e análises detalhadas.
 
