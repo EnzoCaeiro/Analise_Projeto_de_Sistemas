@@ -352,18 +352,18 @@ Registre os problemas identificados durante a revisão.
 
 Antes da entrega, verifique:
 
-- [ ] Os requisitos estão completos?
-- [ ] Os requisitos estão corretos em relação às necessidades?
-- [ ] Cada requisito representa uma única capacidade ou característica?
-- [ ] Os requisitos são necessários?
-- [ ] Os requisitos são viáveis?
-- [ ] Todos possuem prioridade?
-- [ ] Termos ambíguos foram eliminados?
-- [ ] Os requisitos podem ser verificados ou testados?
-- [ ] A fonte ou stakeholder está identificado?
-- [ ] As necessidades estão relacionadas aos requisitos?
-- [ ] Os requisitos de qualidade são mensuráveis sempre que possível?
-- [ ] As prioridades MoSCoW possuem justificativa?
+- [x] Os requisitos estão completos?
+- [x] Os requisitos estão corretos em relação às necessidades?
+- [x] Cada requisito representa uma única capacidade ou característica?
+- [x] Os requisitos são necessários?
+- [x] Os requisitos são viáveis?
+- [x] Todos possuem prioridade?
+- [x] Termos ambíguos foram eliminados?
+- [x] Os requisitos podem ser verificados ou testados?
+- [x] A fonte ou stakeholder está identificado?
+- [x] As necessidades estão relacionadas aos requisitos?
+- [x] Os requisitos de qualidade são mensuráveis sempre que possível?
+- [x] As prioridades MoSCoW possuem justificativa?
 
 ---
 
@@ -371,31 +371,36 @@ Antes da entrega, verifique:
 
 ## 18.1 Qual requisito gerou mais discussão durante o levantamento? Por quê?
 
-> Resposta do grupo.
+> A decisão sobre automatizar ou não os gastos via Open Finance. Concluímos que seria inviável para o prazo acadêmico (RES01), por isso o registro precisou se manter manual (RF01), gerando o desafio de fazer isso em até 3 cliques (RQ01) para que não fique chato de usar.
+
 
 ---
 
 ## 18.2 Qual necessidade inicialmente parecia simples, mas gerou vários requisitos?
 
-> Resposta do grupo.
+> A necessidade de "entender onde o dinheiro foi gasto" (N02). Isso se desdobrou na necessidade de categorizar transações (RF02), na visão em lista no extrato (RF08) e na geração de gráficos (RF03).
+
 
 ---
 
 ## 18.3 O grupo identificou algum requisito implícito durante a discussão?
 
-> Resposta do grupo.
+> Sim. Inicialmente só pensávamos no cadastro de despesas. O requisito implícito foi a segurança e privacidade (RF07 e RN01). Ninguém usará o app se perceber que seus dados financeiros podem vazar ou serem vistos por outras pessoas.
+
 
 ---
 
 ## 18.4 Qual requisito foi mais difícil de priorizar utilizando MoSCoW? Por quê?
 
-> Resposta do grupo.
+> Os gráficos mensais (RF03). Embora tragam muito valor para o usuário (quase um Must Have), chegamos à conclusão que para o projeto rodar na primeira versão, listar as despesas no formato extrato cru (RF08) já era o mínimo viável, jogando o gráfico para um Should Have.
+
+
 
 ---
 
 ## 18.5 Houve algum requisito inicialmente considerado Must que mudou de prioridade?
 
-> Resposta do grupo.
+> O limite/teto de orçamentos (RF04). Inicialmente queríamos como obrigatório para resolver a dor do endividamento, mas percebemos que antes de ditar o futuro (orçamento), o app precisa rastrear bem o presente (transações e categorias). Mudou de Must para Should.
 
 ---
 
@@ -411,7 +416,7 @@ Elabore uma breve conclusão apresentando:
 
 **Conclusão:**
 
-> Escreva aqui a conclusão do grupo.
+> O projeto foi motivado pela constante desorganização financeira pessoal devido à ausência de ferramentas simplificadas e acessíveis. Identificamos o "Usuário Final (Pessoa Física)" como stakeholder principal, cujas maiores dores são o esquecimento de registrar os pequenos gastos e o desconhecimento de para onde o dinheiro flui. Para sanar esses problemas, priorizamos requisitos focados em segurança, facilidade de uso (menos de 3 cliques) e categorização clara. O uso da técnica MoSCoW foi fundamental para podar ideias complexas (como integrações automáticas e gráficos avançados) da nossa primeira versão, permitindo que a equipe foque apenas no núcleo do problema: autenticar o usuário, registrar suas transações e exibir um extrato confiável.
 
 ---
 
