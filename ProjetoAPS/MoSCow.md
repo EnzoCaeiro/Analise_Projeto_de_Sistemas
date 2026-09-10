@@ -1,13 +1,15 @@
 Modelo do template: https://miro.com/pt/modelos/moscow-matrix-basic/
 
+Atividade realizada em : https://miro.com/welcomeonboard/T0tRakpjZUdXVjVYNXU3TEtyU29xeWhLZmY1NzltMXFyU04wMGNxbXlMWVNmU1J0Snp2M0ZhY3dlWEx4ck5jSm9mbjY4NlFjOXQxbmZNdEpjWnNZd2xhUUdkSVZvN2VqbDkrV1Q5OXl5TjBHL3RYeUdyQmpaREdTdjBoeVBrUFVBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=99204530044
+
 # 📋 Projeto de APS [Nome do projeto]
 
 ## Levantamento e Priorização de Requisitos
 
 **Etapa:** Levantamento de Requisitos (Utilizar a ficha dos requisitos levantados) 
 **Técnica de Priorização:** MoSCoW  
-**Data:** ______/______/______
-**Turma:** __________________________  
+**Data:** 10/09/2026
+**Turma:** D2 - Engenharia de Software  
 
 ---
 
