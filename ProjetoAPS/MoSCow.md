@@ -100,11 +100,11 @@ Identifique as pessoas, grupos ou organizações que possuem interesse ou partic
 
 | ID | Stakeholder | Papel | Necessidade/Interesse | Influência |
 |---|---|---|---|---|
-| ST01 | | | | Alta / Média / Baixa |
-| ST02 | | | | Alta / Média / Baixa |
-| ST03 | | | | Alta / Média / Baixa |
-| ST04 | | | | Alta / Média / Baixa |
-| ST05 | | | | Alta / Média / Baixa |
+| ST01 |Usuário Final |Usuário ativo |Registrar gastos facilmente e ver a saúde financeira |Alta 
+| ST02 |Equipe de Desenvolvimento |Construtores |Entregar o sistema funcional e no prazo |Alta |
+| ST03 |Prof. Kadidja Valéria |Avaliadora |Avaliar a aplicação da Engenharia de Requisitos |Alta |
+| ST04 |Provedor de Nuvem |Infraestrutura |Garantir que o sistema fique hospedado no ar |Baixa |
+| ST05 |Instituições Financeiras |Possível Integração (Futuro) |Fornecer dados via Open Finance (fora do escopo atual) |Baixa |
 
 ---
 
@@ -112,11 +112,11 @@ Identifique as pessoas, grupos ou organizações que possuem interesse ou partic
 
 **Stakeholder:**
 
-> Preencher aqui.
+> Usuário Final (Pessoa Física).
 
 **Por que ele foi considerado o principal stakeholder?**
 
-> Preencher aqui.
+> Porque o sistema existe exclusivamente para resolver a dor desse usuário. Se a interface não for intuitiva e prática para ele registrar as despesas no dia a dia, o sistema não será adotado, tornando todo o desenvolvimento inútil.
 
 ---
 
@@ -126,18 +126,18 @@ Registre as principais informações obtidas durante o levantamento.
 
 | Pergunta | Resposta |
 |---|---|
-| O que o usuário precisa fazer? | |
-| Qual problema enfrenta atualmente? | |
-| Quais informações precisa consultar? | |
-| Quais informações precisa cadastrar ou alterar? | |
-| Quais tarefas são repetitivas? | |
-| Quais tarefas consomem mais tempo? | |
-| Quais erros acontecem atualmente? | |
-| Precisa receber notificações? | |
-| Precisa gerar documentos ou relatórios? | |
-| Existem informações que precisam ser protegidas? | |
-| O sistema precisará se comunicar com outros sistemas? | |
-| Existem regras obrigatórias que precisam ser respeitadas? | |
+| O que o usuário precisa fazer? | Registrar ganhos, anotar gastos diários, ver relatórios e definir limites. |
+| Qual problema enfrenta atualmente? | Esquece de anotar gastos e não sabe onde cortá-los. |
+| Quais informações precisa consultar? | Saldo atual, gastos por categoria e limites de orçamento disponíveis. |
+| Quais informações precisa cadastrar ou alterar? | Transações (valor, data, descrição, categoria) e seu próprio perfil/senha. |
+| Quais tarefas são repetitivas? | A inserção diária de pequenos gastos (ex: padaria, transporte, delivery) |
+| Quais tarefas consomem mais tempo? | Analisar e somar categorias no fim do mês manualmente. |
+| Quais erros acontecem atualmente? | Perder o controle do limite do cartão por não somar os gastos picados. |
+| Precisa receber notificações? | Sim, alertas quando estiver próximo de estourar o "teto" de uma categoria. |
+| Precisa gerar documentos ou relatórios? | Sim, painéis gráficos (dashboards) mostrando o consumo mensal. |
+| Existem informações que precisam ser protegidas? | Sim, todos os dados financeiros e senhas (exige banco de dados seguro). |
+| O sistema precisará se comunicar com outros sistemas? | Nesta versão inicial, não. Tudo será inserido manualmente. |
+| Existem regras obrigatórias que precisam ser respeitadas? | O usuário só pode ver seus próprios dados (isolamento de segurança). |
 
 ---
 
@@ -147,17 +147,16 @@ Antes de escrever os requisitos, registre as necessidades identificadas durante 
 
 | ID | Stakeholder | Necessidade Identificada | Problema Relacionado |
 |---|---|---|---|
-| N01 | | | |
-| N02 | | | |
-| N03 | | | |
-| N04 | | | |
-| N05 | | | |
-| N06 | | | |
-| N07 | | | |
-| N08 | | | |
+| N01 | ST01 | Cadastrar despesas e receitas de forma rápida. | Preguiça/Esquecimento de anotar gastos diários.|
+| N02 | ST02 |Entender onde o dinheiro foi gasto visualmente. | Dificuldade em analisar números em planilhas cruas. | 
+| N03 | ST03 |Limitar o quanto pode gastar em certas áreas. | Ficar no vermelho por gastar demais em lazer/delivery. | 
+| N04 | ST04 |Ser avisado antes de gastar demais. | Só descobrir que estourou o orçamento quando falta dinheiro. | 
+| N05 | ST05 |Acompanhar o progresso para comprar/viajar. | Dificuldade de poupar para metas de longo prazo. | 
+| N06 | ST06 |Garantia de que ninguém mais verá seus gastos. | Medo de ter informações financeiras expostas. |
+| N07 | ST07 |Agrupar os gastos por áreas da vida. | Receitas e despesas misturadas impossibilitam análise. |
+| N08 | ST08 |Usar o sistema facilmente pelo celular na rua. | Planilhas dependem de um computador para funcionar bem. |
 
 ---
-
 # ⚙️ 8. Requisitos Funcionais
 
 Os requisitos funcionais representam as funcionalidades e os comportamentos esperados do sistema.
