@@ -326,9 +326,9 @@ Selecionem pelo menos três requisitos que poderão ser adiados.
 
 | ID | Requisito | Motivo para adiar | Impacto |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+|RF05 |Alertas de 90% do orçamento |Exige um processamento em segundo plano a cada gasto, aumentando a complexidade da V1. |O usuário terá que conferir ativamente a barra de progresso, sem ser notificado ativamente. |
+|RF06 |Cadastro de Metas Financeiras |É uma funcionalidade independente do fluxo diário. Seu adiamento garante foco na despesa básica. |Atraso na entrega da funcionalidade que ajuda na poupança de longo prazo. |
+|RF04 |Definição de Teto de Orçamento |Pode ser implementado numa versão V1.5, após estabilizar a captura de dados (RF01 e RF02). |O usuário saberá no que gastou, mas ainda não será barrado visualmente se gastar demais. |
 
 ---
 
