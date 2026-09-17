@@ -206,11 +206,11 @@ Prefira:
 
 | ID | Característica de Qualidade | Requisito | Como será verificado? |
 |---|---|---|---|
-| RQ01 | Desempenho | | |
-| RQ02 | Segurança | | |
-| RQ03 | Usabilidade/Interação | | |
-| RQ04 | Confiabilidade | | |
-| RQ05 | Compatibilidade/Portabilidade | | |
+| RQ01 | Desempenho |O sistema deve carregar os gráficos do dashboard mensal em até 2 segundos para 95% das requisições com conexão 4G padrão.|Ferramentas de teste de carga e análise de rede (Lighthouse/DevTools). |
+| RQ02 | Segurança |As senhas dos usuários devem ser salvas no banco de dados com criptografia (hash) do tipo bcrypt ou similar.|Inspeção do banco de dados na fase de testes. |
+| RQ03 | Usabilidade/Interação |A tela de registro de despesa deve permitir a inserção de um novo gasto em, no máximo, 3 cliques/toques a partir da tela inicial.|Teste de usabilidade cronometrando a ação de usuários reais. |
+| RQ04 | Confiabilidade |O banco de dados relacional deve garantir as restrições de chave estrangeira, impossibilitando transações "órfãs" (sem usuário).|Tentativa de inserção manual via script SQL de dados corrompidos. |
+| RQ05 | Compatibilidade/Portabilidade |A interface front-end deve ser responsiva e se adaptar corretamente a telas de dispositivos móveis a partir de 320px de largura.|Testes manuais em simuladores mobile e redimensionamento de janela de navegador.|
 
 ---
 
@@ -290,19 +290,19 @@ Utilize as seguintes categorias:
 
 | ID | Requisito | MoSCoW | Justificativa |
 |---|---|:---:|---|
-| RF01 | | M / S / C / W | |
-| RF02 | | M / S / C / W | |
-| RF03 | | M / S / C / W | |
-| RF04 | | M / S / C / W | |
-| RF05 | | M / S / C / W | |
-| RF06 | | M / S / C / W | |
-| RF07 | | M / S / C / W | |
-| RF08 | | M / S / C / W | |
-| RQ01 | | M / S / C / W | |
-| RQ02 | | M / S / C / W | |
-| RQ03 | | M / S / C / W | |
-| RQ04 | | M / S / C / W | |
-| RQ05 | | M / S / C / W | |
+| RF01 |Cadastro de transações| M |Sem inserir despesas e receitas, o sistema não tem função.|
+| RF02 |Criação de categorias | M |Categorizar é a base para qualquer análise financeira útil.|
+| RF03 |Gráficos mensais| S |Muito importante para visualizar gastos, mas dá pra lançar a V1 só com extrato.|
+| RF04 |Definição de orçamento teto| S |Essencial para o planejamento, porém secundário em relação ao registro de dados.|
+| RF05 |Alertas de 90% do orçamento| C |Bacana de ter, mas não é impeditivo para a primeira entrega. |
+| RF06 |Cadastro de metas financeiras | C |Funcionalidade complementar, agregará valor em atualizações futuras. |
+| RF07 |Cadastro e login de usuário | M |Indispensável para a privacidade e segurança exigida. |
+| RF08 | Extrato completo| M |O usuário precisa poder ver a lista bruta do que cadastrou. |
+| RQ01 |Registro em até 3 cliques | M |Se for chato/demorado anotar gastos, o app falha no seu objetivo central. |
+| RQ02 |Senhas com Hash | M |Segurança básica não pode ser deixada para depois. |
+| RQ03 |Interface responsiva mobile | M |A principal dor é anotar gastos "na rua" pelo celular. |
+| RQ04 |Carregamento < 2s| S |Importante para a experiência, mas otimizações finas podem ser feitas depois. |
+| RQ05 |Integridade do Banco (Chaves) | M |Fundamental para evitar corrupção de dados na primeira versão. |
 
 ---
 
