@@ -262,14 +262,14 @@ Relacione as necessidades identificadas aos requisitos correspondentes.
 
 | Necessidade | Stakeholder | Requisito(s) relacionado(s) |
 |---|---|---|
-| N01 | | |
-| N02 | | |
-| N03 | | |
-| N04 | | |
-| N05 | | |
-| N06 | | |
-| N07 | | |
-| N08 | | |
+| N01 |ST01 |RF01, RQ01 |
+| N02 |ST01 |RF03, RF08 |
+| N03 |ST01 |RF04 |
+| N04 |ST01 |RF05 |
+| N05 |ST01 |RF06 |
+| N06 |ST01 |RF07, RQ02, RN01 |
+| N07 |ST01 |RF02, RN02, RN03 |
+| N08 |ST01 |RQ03 |
 
 ---
 
