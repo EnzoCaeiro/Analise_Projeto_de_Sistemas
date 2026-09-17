@@ -340,10 +340,10 @@ Registre os problemas identificados durante a revisão.
 
 | ID do Requisito | Problema Encontrado | Sugestão de Melhoria |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+|RF01 |Pode ser ambíguo se o usuário deve ou não colocar o sinal de negativo (-) para despesas. |Criar regra de negócio vinculando o sinal ao tipo de transação via botão de interface. |
+|RQ04 |"Conexão 4G padrão" é difícil de mensurar na sala de aula. |Mudar para "Simulação de Fast 3G no DevTools do Google Chrome". |
+|RF02 |O que acontece se o usuário apagar uma categoria cheia de gastos? |Adicionar a RN03 (bloquear a exclusão ou forçar reatribuição) |
+
 
 ---
 
