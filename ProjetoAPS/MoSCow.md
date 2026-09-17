@@ -230,9 +230,9 @@ As restrições podem estar relacionadas a:
 
 | ID | Restrição | Categoria | Justificativa/Fonte |
 |---|---|---|---|
-| RES01 | | | |
-| RES02 | | | |
-| RES03 | | | |
+| RES01 |O sistema não terá integração automática com bancos. |Escopo / Complexidade |Definido na matriz MoSCoW ("Won't Have") para garantir a entrega a tempo do projeto APS. |
+| RES02 |O sistema deve ser desenvolvido com tecnologias Open Source / Gratuitas. |Orçamento |Projeto acadêmico sem financiamento para licenças de software caras. |
+| RES03 |O projeto precisa ser entregue em sua primeira versão até o final do semestre letivo de 2026. |Prazo |Cronograma da disciplina. |
 
 ---
 
