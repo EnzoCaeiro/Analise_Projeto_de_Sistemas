@@ -177,14 +177,14 @@ Utilize preferencialmente a estrutura:
 
 | ID | Requisito Funcional | Stakeholder/Fonte | Necessidade | Prioridade |
 |---|---|---|---|---|
-| RF01 | O sistema deve... | | | |
-| RF02 | O sistema deve... | | | |
-| RF03 | O sistema deve... | | | |
-| RF04 | O sistema deve... | | | |
-| RF05 | O sistema deve... | | | |
-| RF06 | O sistema deve... | | | |
-| RF07 | O sistema deve... | | | |
-| RF08 | O sistema deve... | | | |
+| RF01 |O sistema deve permitir o cadastro manual de transações (receitas e despesas) contendo valor, data e descrição. |ST01 |N01, N08 |Alta |
+| RF02 |O sistema deve permitir a criação e associação de categorias para cada transação (ex: Alimentação, Lazer). |ST01 |N07 |Alta |
+| RF03 |O sistema deve gerar gráficos mensais resumindo o total gasto por categoria. |ST01 |N02 |Média |
+| RF04 |O sistema deve permitir a definição de um limite de orçamento (teto) para cada categoria. |ST01 |N03 |Média |
+| RF05 |O sistema deve emitir um alerta na tela quando o usuário atingir 90% do orçamento estipulado para uma categoria. |ST01 |N04 |Baixa |
+| RF06 |O sistema deve permitir o cadastro de metas financeiras com nome, valor alvo e prazo. |ST01 |N05 |Baixa |
+| RF07 |O sistema deve gerenciar autenticação de usuários (cadastro, login e recuperação de senha). |ST01 |N06 |Alta|
+| RF08 |O sistema deve exibir um extrato completo com o histórico de todas as transações, permitindo filtros por mês. |ST01 |N02 |Alta |
 
 ---
 
