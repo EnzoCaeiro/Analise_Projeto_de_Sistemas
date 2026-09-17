@@ -250,9 +250,9 @@ Registre as regras do domínio que precisam ser respeitadas pelo sistema.
 
 | ID | Regra de Negócio | Fonte |
 |---|---|---|
-| RN01 | | |
-| RN02 | | |
-| RN03 | | |
+| RN01 |O usuário só poderá visualizar, editar ou excluir dados financeiros vinculados ao seu próprio ID de usuário. |ST01 (Segurança) |
+| RN02 |Uma transação financeira não pode ser cadastrada sem estar associada a pelo menos uma categoria. |ST01 (Organização) |
+| RN03 |Não é possível excluir uma categoria do sistema se houver transações atreladas a ela (exige reatribuição prévia). |Equipe de Desenvolvimento |
 
 ---
 
