@@ -86,7 +86,7 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📝 Licença
 
-Projeto acadêmico
+Projeto acadêmico.
 
 
 
