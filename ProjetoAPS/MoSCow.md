@@ -312,11 +312,11 @@ Após aplicar a técnica MoSCoW, selecionem os **5 requisitos considerados indis
 
 | Ordem | ID | Requisito | Por que deve estar na primeira versão? |
 |:---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 |RF07 |Cadastro e Login |Protege os dados e individualiza a experiência do usuário. |
+| 2 |RF01 |Cadastro de Transações |É o coração da aplicação (core business); não existe sistema sem isso. |
+| 3 |RF02 |Criação de Categorias |Permite organizar minimamente os dados que foram lançados no RF01. |
+| 4 |RF08 |Extrato Completo |O usuário precisa conseguir visualizar o histórico do que acabou de cadastrar. |
+| 5 |RQ01 |Interface Rápida (3 cliques) |Garante que a promessa de ser uma ferramenta prática e intuitiva seja cumprida logo na V1. |
 
 ---
 
