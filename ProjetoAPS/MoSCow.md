@@ -15,13 +15,14 @@ Atividade realizada em : [Site](https://miro.com/welcomeonboard/T0tRakpjZUdXVjVY
 
 # 👥 1. Identificação do Grupo
 
-| Integrante | Nome |
-|---|---|
-| 1 |Enzo Caeiro |
-| 2 | Victor Alves |
-| 3 |Maria Eduarda Moreira |
-| 4 |Arthur Santos |
-| 5 | Felipe Falcão|
+| Nome         |    Git     
+|--------------|-------------
+|Enzo Francisco|[EnzoCaeiro](https://github.com/EnzoCaeiro)
+|Arthur Santos |[ArthurNoleto](https://github.com/arthurnoleto521-hue)        
+|Victor Alves  |[VictorAlves](https://github.com/vituadm)         
+|Maria Eduarda |[EduardaMoreira](https://github.com/moreirafernandesm92-wq)         
+|Felipe Falcão |[FelipeFalcão](https://github.com/2lxpe)         
+
 
 ---
 
