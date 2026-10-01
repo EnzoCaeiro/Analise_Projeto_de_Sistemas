@@ -1,92 +1,72 @@
 # Ficha de Elicitação de Requisitos
 
 **Curso:** Engenharia de Software  
-**Disciplina:** Análise e Projeto de Sistemas  
+**Disciplina:** Análise e Projeto de Sistemas (ProjetoAPS)  
 **Instituição:** UDF Centro Universitário  
-**Grupo/integrantes:** ______________________________________________  
-**Turma:** ____________________  **Data:** ____/____/______  **Versão:** 1.0
-
-> Preencha uma ficha para cada requisito identificado. Registre a necessidade na linguagem do stakeholder e esclareça termos ambíguos antes de validar a ficha com ele.
+**Grupo/integrantes:** Enzo Francisco, Arthur Santos, Victor Alves, Maria Eduarda, Felipe Falcão  
+**Turma:** D2  **Data:** 30/09/2026  **Versão:** 1.0
 
 ## 1. Identificação do projeto
 
 | Campo | Preenchimento |
 |---|---|
-| Nome do projeto | |
-| Objetivo do projeto | Qual problema será resolvido e qual resultado se espera? |
-| Contexto e escopo | Que processo ou serviço será contemplado? |
+| Nome do projeto | ProjetoAPS - Sistema de Gestão Financeira |
+| Objetivo do projeto | Entregar um sistema prático e mobile-first para controle financeiro, reduzindo a desorganização e a ansiedade através do controle centralizado de receitas, categorização de despesas e planejamento orçamentário. |
+| Contexto e escopo | Gestão financeira pessoal e familiar. O escopo da primeira versão contempla o registro rápido de ganhos e gastos, criação de categorias e visualização via extrato, substituindo anotações informais e planilhas complexas. |
 
 ## 2. Stakeholder e fonte
 
 | Campo | Preenchimento |
 |---|---|
-| Stakeholder (nome ou papel) | |
-| Relação com o projeto | Usuário, cliente, gestor, especialista ou outro. |
-| Contato ou setor (se aplicável) | |
-| Técnica e data da elicitação | Entrevista, observação, questionário, oficina ou análise documental; data. |
-| Responsável pelo registro | |
+| Stakeholder (nome ou papel) | ST01 - Usuário Final (Pessoa Física) |
+| Relação com o projeto | Usuário ativo do sistema. |
+| Contato ou setor (se aplicável) | Público em geral (indivíduos e famílias de diversas faixas de renda). |
+| Técnica e data da elicitação | Análise de problemas com métodos atuais (planilhas/cadernos) e levantamento de necessidades; 10/09/2026. |
+| Responsável pelo registro | Equipe de Desenvolvimento |
 
 ## 3. Requisito elicitado
 
 | Campo | Preenchimento |
 |---|---|
-| ID do requisito | REQ-001 (numeração sequencial). |
-| Necessidade relatada pelo stakeholder | Registre o que foi solicitado, de preferência com as palavras utilizadas na elicitação. |
-| Descrição consolidada | O sistema deve... (ação observável, objeto e condições relevantes). |
-| Justificativa ou benefício esperado | |
-| Tipo | Funcional / qualidade / restrição. |
-| Dependências ou dúvidas | |
+| ID do requisito | REQ-001 (Referente ao RF01 e RQ01) |
+| Necessidade relatada pelo stakeholder | "Preciso de um jeito de anotar meus gastos diários, como o pão na padaria, bem rápido pelo celular na rua. Se for demorado ou complexo, eu acabo esquecendo e perco o controle no final do mês." |
+| Descrição consolidada | O sistema deve permitir o cadastro manual de transações (receitas e despesas) informando valor, data, descrição e categoria, exigindo no máximo 3 cliques/toques a partir da tela inicial. |
+| Justificativa ou benefício esperado | Sem inserir despesas e receitas, o sistema não tem função. É o coração da aplicação (core business). A exigência de agilidade (3 cliques) garante que o usuário não abandone o uso diário. |
+| Tipo | Funcional e Qualidade (Usabilidade acoplada). |
+| Dependências ou dúvidas | Depende do cadastro e autenticação de usuário (RF07) e da existência prévia ou criação simultânea de Categorias (RF02). |
 
 ## 4. Regras de negócio
 
 | ID | Regra de negócio relacionada | Fonte ou responsável pela validação |
 |---|---|---|
-| RN-001 | | |
-| RN-002 | | |
-
-> Descreva políticas, condições e limites do domínio. Caso nenhuma regra tenha sido identificada, registre “Não identificada nesta etapa”.
+| RN-001 | O usuário só poderá visualizar, editar ou excluir dados financeiros vinculados ao seu próprio ID de usuário (isolamento de segurança). | ST01 (Segurança) / Equipe Dev |
+| RN-002 | Uma transação financeira não pode ser cadastrada sem estar associada a pelo menos uma categoria. | ST01 (Organização) / Equipe Dev |
+| RN-003 | A interface deve definir automaticamente o sinal da transação (positivo para receita, negativo para despesa) baseado na escolha do usuário, não exigindo digitação de sinais. | Revisão por pares / Equipe Dev |
 
 ## 5. Prioridade
 
-**Classificação MoSCoW (marque uma):** [ ] Must have (essencial)  [ ] Should have (importante)  [ ] Could have (desejável)  [ ] Won't have nesta versão (fora do escopo atual)
+**Classificação MoSCoW (marque uma):** 
+[X] Must have (essencial)  
+[ ] Should have (importante)  
+[ ] Could have (desejável)  
+[ ] Won't have nesta versão (fora do escopo atual)
 
-**Justificativa da prioridade:** ______________________________________________
+**Justificativa da prioridade:** É a funcionalidade base do sistema. Não é possível gerar extratos, gráficos ou controlar o orçamento sem que a entrada de dados (transações) ocorra de maneira funcional e rápida.
 
 ## 6. Critérios de aceitação
 
-Escreva condições verificáveis que permitam decidir se o requisito foi atendido.
-
 | ID | Dado/Quando | Então (resultado esperado) | Evidência ou forma de verificação |
 |---|---|---|---|
-| CA-01 | | | |
-| CA-02 | | | |
-| CA-03 | | | |
+| CA-01 | Dado que o usuário está na tela inicial, Quando ele inserir os dados de uma despesa e confirmar, | Então o sistema deve salvar a transação com sucesso e exibi-la imediatamente no extrato. | Teste funcional na interface e verificação de inserção no Banco de Dados. |
+| CA-02 | Dado o formulário de nova transação, Quando o usuário tentar salvar deixando a categoria ou o valor em branco, | Então o sistema deve impedir o cadastro e apresentar uma mensagem clara de erro obrigando o preenchimento. | Teste de validação de campos no front-end. |
+| CA-03 | Dado que a regra de agilidade é crucial, Quando o usuário desejar registrar um novo gasto a partir da tela inicial, | Então a conclusão do fluxo inteiro não pode exceder 3 cliques/toques na tela. | Teste de usabilidade rastreando interações (CLI/Analytics). |
+| CA-04 | Dado o isolamento de dados, Quando um usuário tentar acessar ou modificar uma transação via API usando um ID diferente do seu, | Então o sistema deve bloquear a ação retornando erro de autorização. | Teste de segurança via endpoint (ex: Postman) forçando IDs de terceiros. |
 
 ## 7. Validação e rastreabilidade
 
 | Campo | Preenchimento |
 |---|---|
-| Situação | [ ] Pendente de validação  [ ] Validado  [ ] Necessita revisão |
-| Validado por / data | |
-| Observações e decisões | |
-| Links relacionados | Issue, protótipo, caso de uso ou documento de origem. |
-
-## Exemplo breve (fictício)
-
-**Projeto:** Sistema de agendamento de atendimento acadêmico. **Objetivo:** permitir que estudantes reservem horários disponíveis. **Stakeholder:** estudante; entrevista em 24/09/2026. **REQ-001:** “Quero escolher um horário de atendimento pelo celular”. **Descrição:** O sistema deve permitir ao estudante autenticado reservar um horário disponível de atendimento. **RN-001:** um horário não pode receber mais de uma reserva ativa. **Prioridade:** Must have, pois a reserva é a função central. **CA-01:** dado um horário disponível, quando o estudante confirmar a reserva, então o sistema registra a reserva e retira o horário da lista de disponibilidade. **CA-02:** dado um horário já reservado, quando outro estudante tentar reservá-lo, então o sistema impede a duplicidade e apresenta uma mensagem clara.
-
-## Como organizar no GitHub
-
-1. No repositório do projeto, crie a pasta `docs/requisitos/`.
-2. Salve esta ficha preenchida como `docs/requisitos/ficha-elicitacao-REQ-001.md`. Crie um arquivo por requisito, alterando o ID de forma sequencial. Guarde a versão PDF de cada ficha na mesma pasta, se a entrega também exigir PDF.
-3. Pelo site do GitHub, use **Add file > Upload files** (ou crie/edite o Markdown com **Add file > Create new file**). Confirme os arquivos com uma mensagem de commit descritiva, como `docs: adiciona ficha de elicitação REQ-001`.
-4. Atualize o `README.md` na raiz do repositório com uma seção de documentação e o link relativo:
-
-```md
-## Documentação de requisitos
-
-- [Ficha de elicitação REQ-001](docs/requisitos/ficha-elicitacao-REQ-001.md)
-- [Versão para impressão (PDF)](docs/requisitos/ficha-elicitacao-REQ-001.pdf)
-```
-
-5. Confira no GitHub se os links abrem e se o ID do arquivo coincide com o ID registrado na ficha. Atualize a ficha após validação, preservando o histórico de commits.
+| Situação | [ ] Pendente de validação  [X] Validado  [ ] Necessita revisão |
+| Validado por / data | Validação interna pelo grupo (Revisão por Pares) / 10/09/2026 |
+| Observações e decisões | A ambiguidade sobre o uso do sinal de menos (-) nas despesas foi resolvida adicionando a RN-003, conforme apontado na revisão. |
+| Links relacionados | Origem: RF01, N01, N08, RQ03. Integração com RF02 e RF07. Documento de Requisitos V1. |
