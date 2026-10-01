@@ -6,6 +6,8 @@
 **Grupo/integrantes:** Enzo Francisco, Arthur Santos, Victor Alves, Maria Eduarda, Felipe Falcão  
 **Turma:** D2  **Data:** 30/09/2026  **Versão:** 1.0
 
+> Ficha preenchida com base no levantamento de requisitos do Sistema de Gestão Financeira, focada na funcionalidade central de transações.
+
 ## 1. Identificação do projeto
 
 | Campo | Preenchimento |
@@ -18,9 +20,9 @@
 
 | Campo | Preenchimento |
 |---|---|
-| Stakeholder (nome ou papel) | ST01 - Usuário Final (Pessoa Física) |
-| Relação com o projeto | Usuário ativo do sistema. |
-| Contato ou setor (se aplicável) | Público em geral (indivíduos e famílias de diversas faixas de renda). |
+| Stakeholder (nome ou papel) | ST01 - Jovem adulto trabalhador / Chefe de família. |
+| Relação com o projeto | Usuário ativo do sistema, principal beneficiário da ferramenta. |
+| Contato ou setor (se aplicável) | Pessoas físicas que utilizam smartphone no dia a dia, possuem renda mensal e enfrentam dificuldades em poupar por não terem conhecimentos avançados em finanças ou planilhas de Excel. |
 | Técnica e data da elicitação | Análise de problemas com métodos atuais (planilhas/cadernos) e levantamento de necessidades; 10/09/2026. |
 | Responsável pelo registro | Equipe de Desenvolvimento |
 
@@ -29,9 +31,9 @@
 | Campo | Preenchimento |
 |---|---|
 | ID do requisito | REQ-001 (Referente ao RF01 e RQ01) |
-| Necessidade relatada pelo stakeholder | "Preciso de um jeito de anotar meus gastos diários, como o pão na padaria, bem rápido pelo celular na rua. Se for demorado ou complexo, eu acabo esquecendo e perco o controle no final do mês." |
+| Necessidade relatada pelo stakeholder | "Como não entendo muito de Excel, preciso de um jeito de anotar meus gastos diários (como o pão na padaria ou o Uber) bem rápido pelo celular na rua. Se for demorado, eu acabo esquecendo e chego no fim do mês no vermelho." |
 | Descrição consolidada | O sistema deve permitir o cadastro manual de transações (receitas e despesas) informando valor, data, descrição e categoria, exigindo no máximo 3 cliques/toques a partir da tela inicial. |
-| Justificativa ou benefício esperado | Sem inserir despesas e receitas, o sistema não tem função. É o coração da aplicação (core business). A exigência de agilidade (3 cliques) garante que o usuário não abandone o uso diário. |
+| Justificativa ou benefício esperado | Sem inserir despesas e receitas, o sistema não tem função. É o coração da aplicação (core business). A exigência de agilidade (3 cliques) garante que o usuário de perfil leigo não abandone o uso diário. |
 | Tipo | Funcional e Qualidade (Usabilidade acoplada). |
 | Dependências ou dúvidas | Depende do cadastro e autenticação de usuário (RF07) e da existência prévia ou criação simultânea de Categorias (RF02). |
 
