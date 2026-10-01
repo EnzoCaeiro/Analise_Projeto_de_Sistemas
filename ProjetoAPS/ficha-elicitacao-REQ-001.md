@@ -6,7 +6,6 @@
 **Grupo/integrantes:** Enzo Francisco, Arthur Santos, Victor Alves, Maria Eduarda, Felipe Falcão  
 **Turma:** D2  **Data:** 30/09/2026  **Versão:** 1.0
 
-> Ficha preenchida com base no levantamento de requisitos do Sistema de Gestão Financeira, focada na funcionalidade central de transações.
 
 ## 1. Identificação do projeto
 
