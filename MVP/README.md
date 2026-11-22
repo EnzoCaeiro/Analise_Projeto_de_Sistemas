@@ -16,7 +16,9 @@
 **Engenharia de Software · UDF Centro Universitário · Turma D2**
 **Disciplina:** Análise e Projeto de Sistemas · **Profª** Kadidja Valéria
 
-[📂 Abrir o MVP](./index.html) · [📋 Requisitos](./ProjetoAPS/MoSCow.md) · [🧩 Casos de uso](./Unidade4/ModelagemSistema/CasoDeUsos.md) · [🎨 Lean Canvas](./Unidade4/Lean%20Canvas.png)
+### 👉 [Acesse a demonstração online](https://enzocaeiro.github.io/Analise_Projeto_de_Sistemas/MVP/)
+
+[🚀 Testar o MVP online](https://enzocaeiro.github.io/Analise_Projeto_de_Sistemas/MVP/) · [📋 Requisitos](../ProjetoAPS/MoSCow.md) · [🧩 Casos de uso](../Unidade4/ModelagemSistema/CasoDeUsos.md) · [🎨 Lean Canvas](../Unidade4/Lean%20Canvas.png)
 
 </div>
 
@@ -87,11 +89,8 @@ Um sistema de gestão financeira pessoal, pensado primeiro para o celular, em qu
 
 ## ⏱️ Como testar em 30 segundos
 
-1. Baixe ou clone o repositório:
-   ```bash
-   git clone https://github.com/EnzoCaeiro/Analise_Projeto_de_Sistemas.git
-   ```
-2. Abra o arquivo **`MVP/index.html`** em qualquer navegador moderno. Não precisa instalar nada nem rodar servidor.
+1. **Online:** acesse https://enzocaeiro.github.io/Analise_Projeto_de_Sistemas/MVP/ em qualquer navegador, no computador ou no celular.
+2. **Ou localmente:** clone o repositório (`git clone https://github.com/EnzoCaeiro/Analise_Projeto_de_Sistemas.git`) e abra o arquivo `MVP/index.html` no navegador. Não precisa instalar nada nem rodar servidor.
 3. Clique em **"Explorar com conta demo"** para ver o sistema já com dados.
 4. Para ver a regra dos 3 toques: toque em **Novo lançamento**, escolha uma **categoria** e toque em **Salvar**. O contador no topo da tela mostra quantos toques você usou.
 
@@ -177,7 +176,7 @@ Para ser transparente sobre o que este MVP **não** é:
 ```
 Analise_Projeto_de_Sistemas/
 ├── MVP/
-│   ├── index.html            ← o MVP (abra no navegador)
+│   ├── index.html            ← o MVP (publicado no GitHub Pages)
 │   └── README.md             ← este arquivo
 ├── ProjetoAPS/
 │   ├── README.md             ← visão geral (5W2H)
